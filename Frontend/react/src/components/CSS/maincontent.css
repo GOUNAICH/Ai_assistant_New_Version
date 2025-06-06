@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.profile_container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.profile_image {
+  width: 92px;
+  height: 90px;
+  object-fit: fill;
+}
+
+.centered_text_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px; /* space from top */
+  margin-bottom: 60px;
+}
+.absolute-image_content {
+  position: absolute;
+  bottom: 76px;
+  left: -110px;
+  width: 127px;
+  height: 164px;
+  object-fit: fill;
+}
+
+.absolute-image2_content {
+  position: absolute;
+  bottom: 76px;
+  right: -105px;
+  width: 125px;
+  height: 163px;
+  object-fit: fill;
+}
+
+.button-column_content {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #261EA0;
+  border-radius: 40px;
+  border: none;
+  padding: 19px 32px;
+  text-align: left;
+}
+
+.button-column2_content {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #261EA0;
+  border-radius: 40px;
+  border: none;
+  padding: 18px 16px;
+  text-align: left;
+}
+
+.column_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000000;
+  padding-top: 27px;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.column2_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.column3_content {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #261EA0;
+  border-radius: 40px;
+  padding: 1px 32px 15px 32px;
+}
+
+.contain_content {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.image_content {
+  width: 92px;
+  height: 90px;
+  object-fit: fill;
+}
+
+.image2_content {
+  width: 372px;
+  height: 367px;
+  object-fit: fill;
+}
+
+.image3_content {
+  width: 38px;
+  height: 37px;
+  margin-right: 37px;
+  object-fit: fill;
+}
+
+.image4_content {
+  width: 38px;
+  height: 37px;
+  object-fit: fill;
+}
+
+.image5_content {
+  width: 157px;
+  height: 157px;
+  object-fit: fill;
+}
+
+.image6_content {
+  width: 143px;
+  height: 116px;
+  margin-bottom: 22px;
+  object-fit: fill;
+}
+
+.image7_content {
+  width: 138px;
+  height: 138px;
+  margin-bottom: 1px;
+  object-fit: fill;
+}
+
+.input_content {
+  color: #FFFFFF;
+  font-size: 32px;
+  flex: 1;
+  align-self: stretch;
+  background: none;
+  border: none;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.row-view_content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 59px;
+  margin-left: 444px;
+}
+
+.row-view2_content {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  background: #201E1E;
+  border-radius: 50px;
+  padding: 20px 32px 20px 54px;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.row-view3_content {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 219px;
+  margin-right: 219px;
+}
+
+.scroll-view_content {
+  height: 1080px;
+  align-self: stretch;
+  background: #FFFFFF;
+}
+
+.text_content {
+  color: #FFFFFF;
+  font-size: 55px;
+  text-align: center;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text3_content {
+  color: #FFF2F2;
+  font-size: 32px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  text-align: center;
+  width: 100%;
+
+}
+.view_content {
+  align-self: stretch;
+  background: #736AF4;
+  border-radius: 50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 79px;
+  margin-left: 374px;
+  margin-right: 374px;
+  box-shadow: 0px 4px 4px #00000040;
+}

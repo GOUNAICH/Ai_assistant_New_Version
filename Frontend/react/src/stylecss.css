@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.column {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #261D9F;
+    padding-top: 68px;
+    padding-right: 20px;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+}
+
+.image {
+    width: 35px;
+    height: 35px;
+    margin-right: 19px;
+    object-fit: fill;
+}
+
+.image2 {
+    width: 92px;
+    height: 90px;
+    margin-right: 29px;
+    object-fit: fill;
+}
+
+.row-view {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+}
+
+.row-view2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 96px;
+    margin-left: 32px;
+    margin-right: 31px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.row-view3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 93px;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.row-view4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 102px;
+    margin-left: 32px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.row-view5 {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text {
+    color: #FFF2F2;
+    font-size: 32px;
+}
+
+.view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #000000;
+    padding-top: 27px;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+}
+
+
+/*
+import React from "react";
+
+import "./stylecss.css"
+export default (props) => {
+  return (
+    <div className="contain">
+      <div className="row-view">
+        <div className="column">
+          <div className="row-view2">
+            <img
+              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/24njmecx_expires_30_days.png"}
+              className="image"
+            />
+            <span className="text" >
+              {"Home"}
+            </span>
+          </div>
+          <div className="row-view3">
+            <img
+              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/nio4ejqu_expires_30_days.png"}
+              className="image"
+            />
+            <span className="text" >
+              {"About"}
+            </span>
+          </div>
+          <div className="row-view4">
+            <img
+              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/442pfej1_expires_30_days.png"}
+              className="image"
+            />
+            <span className="text" >
+              {"Help"}
+            </span>
+          </div>
+          <div className="row-view5">
+            <img
+              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/00gisola_expires_30_days.png"}
+              className="image"
+            />
+            <span className="text" >
+              {"Settings"}
+            </span>
+          </div>
+        </div>
+        <div className="view">
+          <img
+            src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/mt3mn8gc_expires_30_days.png"}
+            className="image2"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+  */

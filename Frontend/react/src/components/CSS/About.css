@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.column_About {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000000;
+  padding-top: 27px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.column2_About {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.column3_About {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.column4_About {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #261EA0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.contain_About {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+.image_About {
+  width: 92px;
+  height: 90px;
+  object-fit: fill;
+}
+
+.image2_About {
+  width: 183px;
+  height: 181px;
+  margin-right: 12px;
+  object-fit: fill;
+}
+
+.image3_About {
+  width: 46px;
+  height: 37px;
+  margin-right: 26px;
+  object-fit: fill;
+}
+
+.image4_About {
+  width: 37px;
+  height: 37px;
+  margin-top: 4px;
+  margin-right: 30px;
+  object-fit: fill;
+}
+
+.image5_About {
+  width: 44px;
+  height: 44px;
+  margin-right: 121px;
+  object-fit: fill;
+}
+
+.image6_About {
+  width: 44px;
+  height: 44px;
+  object-fit: fill;
+}
+
+.row-view_About {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  margin-left: 29px;
+  margin-right: 29px;
+}
+
+.row-view2_About {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.row-view3_About {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6px;
+  margin-left: 12px;
+}
+
+.row-view4_About {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  margin-left: 12px;
+}
+
+.row-view5_About {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+
+.row-view6_About {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 222px;
+}
+
+.scroll-view_About {
+  height: 1090px;
+  align-self: stretch;
+  background: #FFFFFF;
+}
+
+.text_About {
+  color: #FFFFFF;
+  font-size: 40px;
+  margin-top: 24px;
+  flex: 1;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text2_About {
+  color: #FFFFFF;
+  font-size: 32px;
+  margin-bottom: 18px;
+  width: auto; /* or a larger fixed width */
+  white-space: nowrap;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text3_About {
+  color: #FFFFFF;
+  font-size: 32px;
+font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text4_About {
+  color: #FFFFFF;
+  font-size: 32px;
+  width: 167px;
+font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text5_About {
+  color: #FFFFFF;
+  font-size: 32px;
+  margin-bottom: 18px;
+  width: auto; /* or a larger fixed width */
+  white-space: nowrap;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.view_About {
+  flex: 1;
+  background: #726AF4;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 12px;
+}
+
+.view2_About {
+  flex: 1;
+  background: #726AF4;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column_Features {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 26px; /* top/bottom: 40px, sides: 26px */
+  gap: 37px;
+}
+.column2_Features {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #000000;
+	border-radius: 50px;
+	padding-top: 12px;
+	padding-bottom: 30px;
+  padding-top: 30px;
+	margin-left: 3px;
+	margin-right: 3px;
+	gap: 21px;
+}
+.column3_Features {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #261EA0;
+	border-radius: 50px;
+	padding-top: 12px;
+	padding-bottom: 25px;
+  padding-top: 30px;
+	margin-left: 3px;
+	margin-right: 3px;
+	gap: 21px;
+}
+.contain_Features {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+.image_Features {
+	width: 69px;
+	height: 69px;
+	object-fit: fill;
+}
+.image2_Features {
+	width: 66px;
+	height: 66px;
+	object-fit: fill;
+}
+.image3_Features {
+	width: 79px;
+	height: 50px;
+	object-fit: fill;
+}
+.image4_Features {
+	width: 54px;
+	height: 44px;
+	object-fit: fill;
+}
+.image5_Features {
+	width: 63px;
+	height: 63px;
+	object-fit: fill;
+}
+.image6_Features {
+	width: 56px;
+	height: 46px;
+	object-fit: fill;
+}
+.row-view_Features {
+	align-self: stretch;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+}
+.row-view2_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 29px;
+	gap: 42px;
+}
+.row-view3_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 32px;
+	gap: 42px;
+}
+.row-view4_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 23px;
+	gap: 38px;
+}
+.row-view5_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 11px;
+	margin-left: 31px;
+	gap: 32px;
+}
+.row-view6_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 7px;
+	margin-left: 28px;
+	gap: 26px;
+}
+.row-view7_Features {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 22px;
+	gap: 40px;
+}
+.scroll-view_Features {
+	height: 1424px;
+	align-self: stretch;
+	background: #FFFFFF;
+}
+.text_Features {
+	color: #FFFFFF;
+	font-size: 40px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text2_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 10px;
+	width: 246px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text3_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 10px;
+	width: 283px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text4_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 292px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text5_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 221px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text6_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 10px;
+	width: 251px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text7_Features {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 10px;
+	width: 401px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.view_Features {
+	flex: 1;
+	background: #726AF4;
+	border-radius: 50px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.row-view12_Featurs {
+	display: flex;
+	align-items: center;
+	margin-left: 32px;
+	gap: 49px;
+}
+.image12_Featurs {
+	width: 59px;
+	height: 59px;
+	object-fit: fill;
+}
+.text12_Featurs {
+	color: #FFFFFF;
+	font-size: 32px;
+	width: 436px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.row-view312_Featurs {
+	display: flex;
+	align-items: center;
+	margin-left: 14px;
+	gap: 31px;
+}
+.image212_Featurs {
+	width: 96px;
+	height: 66px;
+	margin-top: 11px;
+	object-fit: fill;
+}
+.text312_Featurs {
+	color: #FFFFFF;
+	font-size: 32px;
+	width: 224px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+
+
+.row-view412_Featurs {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 34px;
+	gap: 34px;
+}
+.image412_Featurs {
+	width: 69px;
+	height: 69px;
+	object-fit: fill;
+}
+.text412_Featurs {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 11px;
+	width: 182px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.row-view512_Featurs {
+	display: flex;
+	align-items: center;
+	margin-left: 34px;
+	gap: 14px;
+}
+.image312_Featurs {
+	width: 49px;
+	height: 50px;
+	object-fit: fill;
+}
+.text512_Featurs {
+	color: #FFFFFF;
+	font-size: 32px;
+	width: 431px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+

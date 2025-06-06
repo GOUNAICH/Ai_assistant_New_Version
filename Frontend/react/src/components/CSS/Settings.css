@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.column_content_Settings {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	background: #000000;
+	padding-top: 27px;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.profile_container_Settings {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 10;
+}
+
+.profile_image_Settings {
+	width: 92px;
+	height: 90px;
+	object-fit: fill;
+}
+
+.column_Settings {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 54px 176px 270px 36px;
+}
+
+.contain_Settings {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+
+.image_Settings {
+	width: 39px;
+	height: 40px;
+	margin-right: 37px;
+	object-fit: fill;
+}
+
+.image2_Settings {
+	width: 40px;
+	height: 40px;
+	object-fit: fill;
+}
+
+.image3_Settings {
+	width: 32px;
+	height: 37px;
+	margin-right: 43px;
+	object-fit: fill;
+}
+
+.image4_Settings {
+	width: 29px;
+	height: 30px;
+	margin-right: 46px;
+	object-fit: fill;
+}
+
+.input_Settings {
+	color: #FFF2F2;
+	font-size: 32px;
+	flex: 1;
+	align-self: stretch;
+	background: none;
+	border: none;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.input2_Settings {
+	color: #FFF2F2;
+	font-size: 32px;
+	flex: 1;
+	align-self: stretch;
+	background: none;
+	border: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.row-view_Settings {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 30px;
+	padding: 33px 27px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.row-view2_Settings {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 30px;
+	padding: 33px 28px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.row-view3_Settings {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 30px;
+	padding: 30px 31px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.row-view4_Settings {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 30px;
+	padding: 34px 27px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.text_Settings {
+	color: #FFFFFF;
+	font-size: 40px;
+	margin-bottom: 30px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text2_Settings {
+	color: #FFF2F2;
+	font-size: 32px;
+	flex: 1;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text3_Settings {
+	color: #FFFFFF;
+	font-size: 32px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.view_Settings {
+	align-self: stretch;
+	background: #726AF4;
+	border-radius: 30px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 61px;
+	margin-left: 130px;
+}
+
+.view2_Settings {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #211E1E;
+	border-radius: 500px;
+	padding: 5px 72px 5px 8px;
+	transition: all 0.3s ease;
+}
+
+.view3_Settings {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #736AF4;
+	border-radius: 500px;
+	padding: 5px 8px 5px 72px;
+	transition: all 0.3s ease;
+}
+
+.view4_Settings {
+	align-self: stretch;
+	background: #726AF4;
+	border-radius: 30px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 61px;
+	margin-left: 130px;
+}
+
+.view5_Settings {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #736AF4;
+	border-radius: 500px;
+	padding: 5px 8px 5px 72px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	transition: all 0.3s ease;
+}
+
+.view6_Settings {
+	align-self: stretch;
+	background: #726AF4;
+	border-radius: 30px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-left: 130px;
+}
+
+.box_Reset_Settings {
+	width: 39px;
+	align-self: stretch;
+}
+
+.button_Reset_Settings {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #726AF4;
+	border-radius: 30px;
+	border: none;
+	padding: 3px;
+	margin-top: 63px;
+	text-align: left;
+	margin-left: 130px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button_Reset_Settings:hover {
+	background: #8B82F6;
+}
+
+.contain_Reset_Settings {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+
+.image_Reset_Settings {
+	width: 39px;
+	height: 40px;
+	object-fit: fill;
+}
+
+.row-view_Reset_Settings {
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 30px;
+	padding: 31px 27px;
+}
+
+.text_Reset_Settings {
+	color: #FFF2F2;
+	font-size: 32px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}

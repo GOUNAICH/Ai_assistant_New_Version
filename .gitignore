@@ -1,0 +1,28 @@
+# Node modules inside React and Electron
+Frontend/react/node_modules/
+Frontend/electron/node_modules/
+
+# Build folders
+Frontend/react/dist/
+Frontend/electron/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# VSCode settings
+.vscode/
+
+# Ignore only .env inside Backend
+Backend/.env

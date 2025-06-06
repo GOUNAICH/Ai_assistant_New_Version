@@ -1,0 +1,28 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  /* C'est ça qui simule le zoom à 80% */
+  transform: scale(0.8);
+  transform-origin: top left;
+
+  /* Pour que ça prenne encore 100% après réduction */
+  width: calc(100vw / 0.8);
+  height: calc(100vh / 0.8);
+}
+
+/*.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+*/

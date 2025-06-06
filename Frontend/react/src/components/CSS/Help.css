@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.column_content_Help {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #000000;
+  padding-top: 27px;
+  height: 100%;
+  overflow: hidden;
+
+}
+.profile_container_Help  {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.profile_image_Help  {
+  width: 92px;
+  height: 90px;
+  object-fit: fill;
+}
+
+
+
+
+.button_Help {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #726AF4;
+	border-radius: 50px;
+	border: none;
+	padding: 3px;
+	margin-top: 11px;
+	text-align: left;
+}
+.column_Help {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 41px 20px;
+  margin-left: 20px;
+	gap: 20px;
+}
+.column2_Help {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #000000;
+	border-radius: 50px;
+	padding-top: 9px;
+	padding-bottom: 21px;
+}
+.contain_Help {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+.image_Help {
+	width: 59px;
+	height: 59px;
+	object-fit: fill;
+}
+.image2_Help {
+	width: 63px;
+	height: 62px;
+	object-fit: fill;
+}
+.image3_Help {
+	width: 81px;
+	height: 52px;
+	object-fit: fill;
+}
+.image4_Help {
+	width: 69px;
+	height: 56px;
+	object-fit: fill;
+}
+.image5_Help {
+	width: 70px;
+	height: 70px;
+	object-fit: fill;
+}
+.image6_Help {
+	width: 810px;
+	height: 495px;
+  border-radius: 50px;
+	object-fit: fill;
+}
+.row-view_Help {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 17px;
+	gap: 36px;
+}
+.row-view2_Help {
+	display: flex;
+	align-items: center;
+	margin-bottom: 18px;
+	margin-left: 40px;
+	gap: 40px;
+}
+.row-view3_Help {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 31px;
+	margin-left: 38px;
+	gap: 38px;
+}
+.row-view4_Help {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 25px;
+	margin-left: 29px;
+	gap: 29px;
+}
+.row-view5_Help {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	margin-left: 38px;
+	gap: 32px;
+}
+.row-view6_Help {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 40px;
+	gap: 29px;
+}
+.text_Help {
+	color: #FFFFFF;
+  font-size: 40px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text_Help2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  text-align: left;
+  display: block;
+  margin-left: 16px;
+}
+.text2_Help {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 407px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text3_Help {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 14px;
+	width: 350px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text4_Help {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	width: 292px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text5_Help {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	width: 308px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.text6_Help {
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-top: 11px;
+	width: 525px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box_Help_List {
+	width: 6px;
+	height: 50px;
+	background: #000000;
+	border-radius: 50px;
+}
+.column_Help_List {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 253px;
+  gap: 15px;
+}
+.column2_Help_List {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  align-items: flex-start;
+	margin-right: 241px;
+	gap: 15px;
+}
+.column3_Help_List {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+  align-items: flex-start;
+	margin-right: 12px;
+	gap: 15px;
+}
+.contain_Help_List {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+}
+.row-view_Help_List {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	background: #000000;
+	border-radius: 50px;
+	padding: 27px 8px 27px 91px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.text_Help_List {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  text-align: left;
+}
+.view_Help_List {
+	align-self: stretch;
+	background: #726AF4;
+	border-radius: 50px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 36px;
+  margin-right: 36px;
+  margin-top: 26px;
+}
+.view2_Help_List {
+	flex-shrink: 0;
+	align-items: flex-start;
+	background: #736AF4;
+	border-radius: 50px;
+	padding: 10px 3px 166px 3px;
+}
+.column_Help_List2{
+  align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  margin-left: 12px;
+
+}
+
+.Command_List_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
