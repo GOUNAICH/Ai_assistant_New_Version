@@ -78,11 +78,13 @@ export default function MainContent() {
             src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/jf2awte7_expires_30_days.png"
             className="image3_content"
             alt="Icon 1"
+            onClick={() => alert("Pressed!")}
           />
           <img
             src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/qorxs7lm_expires_30_days.png"
             className="image4_content"
             alt="Icon 2"
+            onClick={() => alert("Pressed!")}
           />
         </div>
       </div>
