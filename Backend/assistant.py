@@ -89,31 +89,29 @@ class AIAssistant:
             elif 'open notepad' in command:
                 await self.notepad_handler.start_notepad_dictation()
 
-            elif self.notepad_handler.is_dictating and any(word in command for word in ['save', 'save file', 'save it']):
-                await self.notepad_handler.save_notepad_file()
-
             elif self.notepad_handler.is_dictating:
+                # Convert command to lowercase for easier matching
+                lower_command = command.lower()
                 
-                while self.notepad_handler.is_dictating:
-                    if self.cancel_flag:
-                        self.speech_handler.speak("Dictation cancelled")
-                        self.notepad_handler.is_dictating=False
-                        return 
                 # Handle special Notepad actions
-                if 'add space' in command:
+                if 'add space' in lower_command:
                     await self.notepad_handler.add_space()
-                elif 'new line' in command or 'add line' in command:
+                elif 'new line' in lower_command or 'add line' in lower_command:
                     await self.notepad_handler.add_new_line()
-                elif 'add tab' in command or 'tab' in command:
+                elif 'add tab' in lower_command or 'tab' in lower_command:
                     await self.notepad_handler.add_tab()
-                elif 'delete last character' in command or 'undo character' in command:
+                elif 'delete last character' in lower_command or 'undo character' in lower_command:
                     await self.notepad_handler.delete_last_character()
-                elif 'clear notepad' in command or 'delete all' in command:
+                elif 'clear notepad' in lower_command or 'delete all' in lower_command:
                     await self.notepad_handler.clear_notepad()
-                elif 'go back' in command:
+                elif 'clear line' in lower_command or 'delete line' in lower_command or 'clear this line' in lower_command:
+                    await self.notepad_handler.clear_current_line()
+                elif 'go back' in lower_command or 'undo' in lower_command:
                     await self.notepad_handler.go_back()
-                elif 'go next' in command:
+                elif 'go next' in lower_command or 'redo' in lower_command:
                     await self.notepad_handler.go_next()
+                elif any(word in lower_command for word in ['save', 'save file', 'save it', 'save the file']):
+                    await self.notepad_handler.save_notepad_file()
                 else:
                     # Write regular text to Notepad
                     await self.notepad_handler.write_to_notepad(command)
