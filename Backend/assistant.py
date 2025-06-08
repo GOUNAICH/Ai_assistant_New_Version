@@ -51,7 +51,7 @@ class AIAssistant:
 
         try:
             
-            if "cancel" in command or "stop" in command :
+            if "cancel" in command :
                 self.cancel_flag=True
                 self.speech_handler.stop_speaking()  # Stop ongoing speech
                 self.speech_handler.speak("Cancelling teh current process...")
@@ -69,8 +69,8 @@ class AIAssistant:
                 if hasattr(self.send_email_handler, "is_sending") and self.send_email_handler.is_sending:
                         self.send_email_handler.is_sending = False
                         self.speech_handler.speak("Email process cancelled.")
-                
                 return 
+            
             elif "close" in command:
                     app_name = command.replace("close", "").strip().lower()
                     closed = self.close_application(app_name)

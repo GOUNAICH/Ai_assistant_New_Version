@@ -7,6 +7,15 @@ requests
 fuzzywuzzy
 OpenCV
 PyPDF2
+psutil
+random
+huggingface_hub
+subprocess
+cv2
+time
+numpy
+PIL
+webbrowser
 
 
 ------------------------------- How Authentication Works ---------------------------------------------------  
@@ -21,5 +30,5 @@ PyPDF2
 1. Clone the repository
 2. Install dependencies:
 
-C:\Users\dell\Desktop\Abdo_ai_assistant\GraphiqueInterface\react : npm install + npm run dev
-C:\Users\dell\Desktop\Abdo_ai_assistant\GraphiqueInterface\elecron : npm install + npm run start
+C:\Users\Morus\Desktop\Ai_assistant_New_Version\Frontend\react: npm install + npm run dev
+C:\Users\Morus\Desktop\Ai_assistant_New_Version\Frontend\elecron : npm install + npm run start
