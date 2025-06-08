@@ -139,11 +139,11 @@ class AIAssistant:
             elif "search for" in command:
                 search_query = command.replace("search for", "").strip()
                 if search_query:
-                    subprocess.run(["start", f"https://www.google.com/search?q={search_query}"], shell=True)
+                    url = f"https://www.google.com/search?q={search_query.replace(' ', '+')}"
+                    subprocess.run(f'start "" "{url}"', shell=True)
                     self.speech_handler.speak(f"Searching for {search_query}.")
                 else:
                     self.speech_handler.speak("Please specify what you'd like me to search for.")
-
             # Basic commands
             elif 'what time is it' in command or 'what is the date' in command or 'tell me a joke' in command:
                 await self.basic_commands.execute_command(command)
