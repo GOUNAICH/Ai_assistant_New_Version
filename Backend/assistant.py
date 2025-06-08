@@ -120,9 +120,18 @@ class AIAssistant:
             elif 'open' in command:
                 app_name = command.replace('open', '').strip().lower()
                 app_path = find_application(app_name)
+
                 if app_path:
-                    subprocess.Popen([app_path])
-                    self.speech_handler.speak(f"Opening {app_name}.")
+                    try:
+                        if app_path.endswith(".lnk"):
+                            os.startfile(app_path)  # open shortcut
+                        elif app_path.startswith("shell:"):
+                            subprocess.Popen(["explorer", app_path])  # UWP apps
+                        else:
+                            subprocess.Popen([app_path])  # Normal exe
+                        self.speech_handler.speak(f"Opening {app_name}.")
+                    except Exception as e:
+                        self.speech_handler.speak(f"Failed to open {app_name}: {e}")
                 else:
                     self.speech_handler.speak(f"Sorry, I couldn't find an application named {app_name}.")
 
