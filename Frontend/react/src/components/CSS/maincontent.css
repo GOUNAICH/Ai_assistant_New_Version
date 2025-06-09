@@ -216,3 +216,28 @@
   margin-right: 374px;
   box-shadow: 0px 4px 4px #00000040;
 }
+/* Add ONLY these lines to your existing CSS file */
+
+/* Smooth transition for assistant image changes */
+.assistant-animate {
+  width: 600px;
+  height: 380px;
+  object-fit: fill;
+  transition: all 0.3s ease;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Optional: Gentle floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Optional: Add scale effect on hover */
+.assistant-animate:hover {
+  transform: scale(1.05);
+}

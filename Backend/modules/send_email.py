@@ -63,19 +63,18 @@ class SendEmail:
         self.speech_handler.speak("I didn't hear you. Let's try again.")
         return ""
 
-    async def type_recipient(self):
-        recipient = await self.get_voice_input("Who do you want to send the email to?")   
-        if recipient:
-            recipient = recipient.replace(" ", "")  # Remove spaces
-            pyautogui.write(recipient + "@gmail.com")
-            pyautogui.press("tab")
-            self.speech_handler.speak(f"Recipient set to {recipient}.")
-            time.sleep(1)
+    def type_recipient_manual(self):
+        """Allow user to manually type recipient email with 6 second wait"""
+        self.speech_handler.speak("Please type the recipient email address. You have 6 seconds.")
+        time.sleep(6)  # Wait 6 seconds for user to type recipient
+        pyautogui.press("tab")  # Move to next field (subject)
+        self.speech_handler.speak("Recipient email entered. Moving to subject.")
+        time.sleep(1)
 
     async def type_subject(self):
         subject = await self.get_voice_input("What is the subject of your email?") 
         if subject:
-            pyautogui.write(subject)
+            pyautogui.write(subject, interval=0.05)
             pyautogui.press("tab")
             self.speech_handler.speak(f"Subject set to {subject}.")
             time.sleep(1)
@@ -83,7 +82,7 @@ class SendEmail:
     async def type_message(self):
         message = await self.get_voice_input("What is the message?") 
         if message:
-            pyautogui.write(message)
+            pyautogui.write(message, interval=0.05)
             self.speech_handler.speak("Message written")
             time.sleep(1)
         
@@ -100,12 +99,12 @@ class SendEmail:
             found = False
             for attempt in range(5):
                 print(f"Debug: Attempt {attempt + 1} to locate attachment button...")
-                attach_btn = pyautogui.locateCenterOnScreen(img_path, confidence=0.85)
+                attach_btn = pyautogui.locateCenterOnScreen(img_path, confidence=0.65)
                 if attach_btn:
                     pyautogui.moveTo(attach_btn, duration=0.3)
                     pyautogui.click()
-                    self.speech_handler.speak("Please select your file. I'll wait 20 seconds.")
-                    time.sleep(20)
+                    self.speech_handler.speak("Please select your file. I'll wait 15 seconds.")
+                    time.sleep(15)
                     self.speech_handler.speak("File attached successfully.")
                     found = True
                     break
@@ -118,8 +117,8 @@ class SendEmail:
                 self.speech_handler.speak("Could not find the attach button. Using keyboard shortcut to open attachment dialog.")
                 pyautogui.hotkey("shift", "a")
                 time.sleep(2)
-                self.speech_handler.speak("Please select your file. I'll wait 20 seconds.")
-                time.sleep(20)
+                self.speech_handler.speak("Please select your file. I'll wait 15 seconds.")
+                time.sleep(15)
                 self.speech_handler.speak("File attached successfully via shortcut.")
 
         except Exception as e:
@@ -154,7 +153,10 @@ class SendEmail:
             self.speech_handler.speak("Email process cancelled because 'New Message' could not be found.")
             return  
 
-        await self.type_recipient()
+        # Modified: Use manual typing for recipient instead of voice input
+        self.type_recipient_manual()
+        
+        # Keep voice input for subject and message
         await self.type_subject()
         await self.type_message()
         await self.ask_attachments()
