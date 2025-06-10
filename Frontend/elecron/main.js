@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow, ipcMain, globalShortcut } = require("electron");
 const { spawn } = require("child_process");
 const path = require("path");
 
@@ -7,8 +7,9 @@ let pythonProcess;
 
 app.whenReady().then(() => {
     mainWindow = new BrowserWindow({
-        width: 1220,
+        width: 1320,
         height: 680,
+        icon: path.join(__dirname, '../../Frontend/react/src/assets/Happy2.png'),
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
             nodeIntegration: true,
@@ -17,7 +18,33 @@ app.whenReady().then(() => {
     });
 
     // Remove the default menu bar
-    // mainWindow.removeMenu();
+    mainWindow.removeMenu();
+
+    // Register F11 for fullscreen toggle
+    globalShortcut.register('F11', () => {
+        if (mainWindow) {
+            mainWindow.setFullScreen(!mainWindow.isFullScreen());
+        }
+    });
+
+    // Optional: Register other useful shortcuts
+    globalShortcut.register('F12', () => {
+        if (mainWindow) {
+            mainWindow.webContents.toggleDevTools();
+        }
+    });
+
+    globalShortcut.register('Ctrl+R', () => {
+        if (mainWindow) {
+            mainWindow.webContents.reload();
+        }
+    });
+
+    globalShortcut.register('Ctrl+Shift+R', () => {
+        if (mainWindow) {
+            mainWindow.webContents.reloadIgnoringCache();
+        }
+    });
 
     mainWindow.loadURL("http://localhost:5173");
 
@@ -28,13 +55,12 @@ app.whenReady().then(() => {
 
     // Set up IPC communication
     ipcMain.on('electron-ready', () => {
-
         pythonProcess.stdin.write('window_ready\n');
     });
 
     pythonProcess.stdout.on("data", (data) => {
         const response = data.toString().trim();
-        console.log(` ${response}`); // Log to terminal for debugging
+        console.log(` ${response}`);
         if (mainWindow) {
             mainWindow.webContents.send("python-response", response);
         }
@@ -60,4 +86,9 @@ app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
         app.quit();
     }
+});
+
+// Clean up global shortcuts when app is quitting
+app.on('will-quit', () => {
+    globalShortcut.unregisterAll();
 });

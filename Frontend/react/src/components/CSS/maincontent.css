@@ -94,12 +94,6 @@
   padding: 1px 32px 15px 32px;
 }
 
-.contain_content {
-  display: flex;
-  flex-direction: column;
-  background: #FFFFFF;
-}
-
 .image_content {
   width: 92px;
   height: 90px;
@@ -184,15 +178,9 @@
   margin-right: 219px;
 }
 
-.scroll-view_content {
-  height: 1080px;
-  align-self: stretch;
-  background: #FFFFFF;
-}
-
 .text_content {
   color: #FFFFFF;
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   font-family: 'Reem Kufi Fun', sans-serif;
 }
