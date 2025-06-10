@@ -1,0 +1,72 @@
+.column_Sidebar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #261D9F;
+    padding: 14px 48px 143px 48px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image_Sidebar2 {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 66px;
+    object-fit: fill;
+}
+
+.image2_Sidebar2 {
+    width: 39px;
+    height: 39px;
+    margin-bottom: 109px;
+    object-fit: fill;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.image3_Sidebar2 {
+    width: 40px;
+    height: 39px;
+    margin-bottom: 109px;
+    object-fit: fill;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.image4_Sidebar2 {
+    width: 40px;
+    height: 38px;
+    margin-bottom: 108px;
+    object-fit: fill;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.image5_Sidebar2 {
+    width: 40px;
+    height: 38px;
+    margin-bottom: 206px;
+    object-fit: fill;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.image6_Sidebar2 {
+    width: 40px;
+    height: 38px;
+    object-fit: fill;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Active state styling for sidebar2 links - ONLY for active items */
+.column_Sidebar2 a.active .image2_Sidebar2,
+.column_Sidebar2 a.active .image3_Sidebar2,
+.column_Sidebar2 a.active .image4_Sidebar2,
+.column_Sidebar2 a.active .image5_Sidebar2 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

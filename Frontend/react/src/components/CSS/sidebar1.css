@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+.column_Sidebar1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #261D9F;
+    padding-top: 17px;
+    padding-bottom: 137px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image_Sidebar1 {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    object-fit: fill;
+}
+
+.image2_Sidebar1 {
+    width: 39px;
+    height: 39px;
+    object-fit: fill;
+}
+
+.image3_Sidebar1 {
+    width: 40px;
+    height: 39px;
+    object-fit: fill;
+}
+
+.image4_Sidebar1 {
+    width: 40px;
+    height: 38px;
+    object-fit: fill;
+}
+
+.row-view_Sidebar1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 99px;
+    margin-left: 43px;
+    gap: 19px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none !important;
+    width: 220px; /* <-- fixed width */
+    box-sizing: border-box; /* ensures padding is included within width */
+}
+
+.row-view2_Sidebar1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 98px;
+    margin-left: 43px;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none !important;
+    width: 220px; /* <-- fixed width */
+    box-sizing: border-box; /* ensures padding is included within width */
+}
+
+.row-view3_Sidebar1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 206px;
+    margin-left: 43px;
+    margin-right: 43px;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none !important;
+}
+
+.row-view4_Sidebar1 {
+    display: flex;
+    align-items: center;
+    margin-left: 43px;
+    gap: 19px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 220px; /* <-- fixed width */
+    box-sizing: border-box; /* ensures padding is included within width */
+}
+
+/* Active state styling - ONLY for active items */
+.row-view_Sidebar1.active,
+.row-view2_Sidebar1.active,
+.row-view3_Sidebar1.active {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text_Sidebar1 {
+    color: #FFF2F2;
+    font-size: 32px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text2_Sidebar1 {
+    color: #FFF2F2;
+    font-size: 32px;
+    width: 86px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.text3_Sidebar1 {
+    color: #FFF2F2;
+    font-size: 32px;
+    width: 64px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.view_Sidebar1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 62px;
+}
