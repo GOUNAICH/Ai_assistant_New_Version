@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, globalShortcut } = require("electron");
+const { app, BrowserWindow, ipcMain, Menu } = require("electron");
 const { spawn } = require("child_process");
 const path = require("path");
 
@@ -17,34 +17,38 @@ app.whenReady().then(() => {
         },
     });
 
-    // Remove the default menu bar
-    mainWindow.removeMenu();
-
-    // Register F11 for fullscreen toggle
-    globalShortcut.register('F11', () => {
-        if (mainWindow) {
-            mainWindow.setFullScreen(!mainWindow.isFullScreen());
+    // Create a minimal menu with just the shortcuts you need
+    const template = [
+        {
+            label: 'View',
+            submenu: [
+                {
+                    label: 'Toggle Fullscreen',
+                    accelerator: 'F11',
+                    click: () => {
+                        mainWindow.setFullScreen(!mainWindow.isFullScreen());
+                    }
+                },
+                {
+                    label: 'Toggle Developer Tools',
+                    accelerator: 'F12',
+                    click: () => {
+                        mainWindow.webContents.toggleDevTools();
+                    }
+                },
+                {
+                    label: 'Reload',
+                    accelerator: 'CmdOrCtrl+R',
+                    click: () => {
+                        mainWindow.webContents.reload();
+                    }
+                }
+            ]
         }
-    });
+    ];
 
-    // Optional: Register other useful shortcuts
-    globalShortcut.register('F12', () => {
-        if (mainWindow) {
-            mainWindow.webContents.toggleDevTools();
-        }
-    });
-
-    globalShortcut.register('Ctrl+R', () => {
-        if (mainWindow) {
-            mainWindow.webContents.reload();
-        }
-    });
-
-    globalShortcut.register('Ctrl+Shift+R', () => {
-        if (mainWindow) {
-            mainWindow.webContents.reloadIgnoringCache();
-        }
-    });
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
 
     mainWindow.loadURL("http://localhost:5173");
 
@@ -86,9 +90,4 @@ app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
         app.quit();
     }
-});
-
-// Clean up global shortcuts when app is quitting
-app.on('will-quit', () => {
-    globalShortcut.unregisterAll();
 });
