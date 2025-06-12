@@ -48,7 +48,7 @@ app.whenReady().then(() => {
     mainWindow.loadURL("http://localhost:5173");
 
     // Start Python process with 'electron' argument
-    pythonProcess = spawn("python", ["C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\main.py", "electron"], {
+    pythonProcess = spawn("python", ["../../Backend/main.py", "electron"], {
         stdio: ["pipe", "pipe", "pipe"]
     });
 

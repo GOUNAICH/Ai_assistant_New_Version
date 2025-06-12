@@ -1,16 +1,18 @@
 import time
 import cv2
 import pyautogui as p
+import os
+
 
 def AuthenticateFace(user_id=1):  # Default user ID is 1
     flag = 0  # Initialize flag
     recognizer = cv2.face.LBPHFaceRecognizer_create()
 
-    # Load trained model
-    recognizer.read('C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\trainer\\trainer.yml')  
+    # Use absolute path based on the location of this file
+    recognizer.read(os.path.join(os.path.dirname(__file__), 'trainer', 'trainer.yml'))
 
     # Load Haar Cascade for face detection
-    cascadePath = "C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\haarcascade_frontalface_default.xml"
+    cascadePath = os.path.join(os.path.dirname(__file__), 'haarcascade_frontalface_default.xml')
     faceCascade = cv2.CascadeClassifier(cascadePath)
 
     font = cv2.FONT_HERSHEY_SIMPLEX

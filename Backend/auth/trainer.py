@@ -3,10 +3,17 @@ import numpy as np
 from PIL import Image #pillow package
 import os
 
-path = 'C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\samples' # Path for samples already taken
+# Dynamically resolve path to the samples directory and cascade file
+base_dir = os.path.dirname(__file__)
+path = os.path.join(base_dir, 'samples')
+cascade_path = os.path.join(base_dir, 'haarcascade_frontalface_default.xml')
+trainer_path = os.path.join(base_dir, 'trainer', 'trainer.yml')
+
+
+
 
 recognizer = cv2.face.LBPHFaceRecognizer_create() # Local Binary Patterns Histograms
-detector = cv2.CascadeClassifier("C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\haarcascade_frontalface_default.xml")
+detector = cv2.CascadeClassifier(cascade_path)
 #Haar Cascade classifier is an effective object detection approach
 
 
@@ -35,6 +42,6 @@ print ("Training faces. It will take a few seconds. Wait ...")
 faces,ids = Images_And_Labels(path)
 recognizer.train(faces, np.array(ids))
 
-recognizer.write('C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\trainer\\trainer.yml')  # Save the trained model as trainer.yml
+recognizer.write(trainer_path)  # Save the trained model as trainer.yml
 
 print("Model trained, Now we can recognize your face.")

@@ -1,12 +1,14 @@
 import cv2
+import os
 
 cam = cv2.VideoCapture(0, cv2.CAP_DSHOW) #create a video capture object which is helpful to capture videos through webcam
 cam.set(3, 640) # set video FrameWidth
 cam.set(4, 480) # set video FrameHeight
 
+# Dynamically get the path to the Haar Cascade file in the current directory
+haar_path = os.path.join(os.path.dirname(__file__), 'haarcascade_frontalface_default.xml')
+detector = cv2.CascadeClassifier(haar_path)
 
-detector = cv2.CascadeClassifier('C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\haarcascade_frontalface_default.xml')
-#Haar Cascade classifier is an effective object detection approach
 
 face_id = input("Enter a Numeric user ID  here:  ")
 #Use integer ID for every new face (0,1,2,3,4,5,6,7,8,9........)
@@ -26,7 +28,9 @@ while True:
         count += 1
 
         
-        cv2.imwrite("C:\\Users\\Morus\\Desktop\\Ai_assistant_New_Version\\Backend\\auth\\samples\\face." + str(face_id) + '.' + str(count) + ".jpg", converted_image[y:y+h,x:x+w])
+        # Construct the path for saving the face sample image
+        face_img_path = os.path.join('samples', f"face.{face_id}.{count}.jpg")
+        cv2.imwrite(face_img_path, converted_image[y:y + h, x:x + w])
         # To capture & Save images into the datasets folder
 
         cv2.imshow('image', img) #Used to display an image in a window
