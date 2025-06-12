@@ -16,7 +16,7 @@ class WeatherHandler:
             if response.status_code == 200:
                 temp = data['main']['temp'] - 273.15
                 weather = data['weather'][0]['description']
-                self.speech_handler.speak(f"Current temperature is {temp:.1f}°C with {weather}")
+                self.speech_handler.speak(f"Current temperature is {temp:.1f} degrees Celsius with {weather}")
             else:
                 self.speech_handler.speak("Sorry, I couldn't fetch the weather information")
 
