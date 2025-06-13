@@ -16,13 +16,13 @@ from auth import recoganize
 from modules.img_to_text import ImageCaptioning
 from modules.scan import PhoneScreenCapture
 from modules.pdf_reader import InteractivePDFCompanion
-from modules.about import Aboutcristiano
+from modules.about import Aboutcrista
 
 load_dotenv()
 
 class AIAssistant:
 
-    flag = recoganize.AuthenticateFace()
+    #flag = recoganize.AuthenticateFace()
     
     def __init__(self, window):
         self.window = window
@@ -38,7 +38,7 @@ class AIAssistant:
         self.volume_control = VolumeControl()
         self.image_captioning = ImageCaptioning(self.speech_handler)
         self.phone_screen_capture = PhoneScreenCapture(self.speech_handler)
-        self.about_cristiano = Aboutcristiano(self.speech_handler)
+        self.about_crista = Aboutcrista(self.speech_handler)
 
         # Initialize PDF Reader
         self.pdf_reader = None
@@ -83,8 +83,24 @@ class AIAssistant:
                 
             self.cancel_flag=False
               
-            if "how are you" in command or "who built you" in command or "who created you" in command or "who made you" in command or "what can you do" in command or "your features" in command or "your capabilities" in command or "help me" in command or "thank you" in command or "thanks" in command:
-                self.about_cristiano.respond(command)
+            if (
+                "how are you" in command 
+                or "who built you" in command 
+                or "who created you" in command 
+                or "who made you" in command 
+                or "what can you do" in command 
+                or "your features" in command 
+                or "your capabilities" in command 
+                or "help me" in command 
+                or "thank you" in command 
+                or "thanks" in command 
+                or "hello" in command 
+                or "hi" in command 
+                or "hey" in command 
+                or "crista" in command 
+                or "krista" in command 
+            ):
+                self.about_crista.respond(command)
 
             elif 'open notepad' in command:
                 await self.notepad_handler.start_notepad_dictation()

@@ -30,7 +30,7 @@ export default function MainContent() {
     setCurrentAssistantImg(thinkingImg);
     
     const cycleThinkingImages = () => {
-      // Start with main thinking image for 5 seconds
+      // Start with main thinking image for 4 seconds
       setCurrentAssistantImg(thinkingImg);
       
       const timeout1 = setTimeout(() => {
@@ -54,7 +54,7 @@ export default function MainContent() {
         
         // Store timeout for cleanup
         thinkingAnimationRef.current = timeout2;
-      }, 5000);
+      }, 4000);
       
       // Store timeout for cleanup
       thinkingAnimationRef.current = timeout1;
