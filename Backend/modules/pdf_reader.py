@@ -166,7 +166,7 @@ class InteractivePDFCompanion:
         
         while attempt < max_attempts:
             try:
-                self.speaker.speak("Say: 'continue', 'repeat', 'next page', 'previous page', 'go to page X', or 'stop'")
+                
                 await asyncio.sleep(1)
                 
                 command = await self.speaker.listen_command()

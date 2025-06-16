@@ -71,7 +71,7 @@ export default function Helpt() {
           <video
             src={vedio}
             className="image6_Help"
-            /* autoPlay*/
+            autoPlay
             muted
             loop
             playsInline

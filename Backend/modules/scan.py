@@ -9,7 +9,7 @@ from modules.speech import SpeechHandler
 class PhoneScreenCapture:
     def __init__(self, speech_handler):
         self.speech_handler = speech_handler
-        self.url = 'http://192.168.1.100:8080/photoaf.jpg'  # IP Webcam image URL
+        self.url = 'http://192.168.1.102:8080/photoaf.jpg'  # IP Webcam image URL
         # Get documents folder path
         self.docs_folder = os.path.join(os.path.expanduser('~'), 'Documents', 'PhoneCaptures')
         os.makedirs(self.docs_folder, exist_ok=True)

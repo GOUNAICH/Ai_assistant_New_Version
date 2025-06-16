@@ -7,6 +7,13 @@ import heartImg from "../../assets/Heart.png";        // when user says thank yo
 import thinkingImg from "../../assets/Happy2.png";  // when processing
 import thinkingImgLeft from "../../assets/Left_Eyes_assistant.png";  // when processing
 import thinkingImgRight from "../../assets/Right_Eyes_assistant.png";  // when processing
+import Chat from "../../assets/chat.png";
+import Desc from "../../assets/desc.png";
+import Email from "../../assets/email.png";
+import Profile from "../../assets/profile.png";
+import Send from "../../assets/send.png";
+import Weather from "../../assets/weather.png";
+
 import "../CSS/maincontent.css";
 
 export default function MainContent() {
@@ -175,7 +182,7 @@ export default function MainContent() {
     <div className="column_content">
       <div className="profile_container">
         <img
-          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/tlstigkr_expires_30_days.png"
+          src={Profile}
           className="profile_image"
           alt="Profile"
         />
@@ -212,13 +219,13 @@ export default function MainContent() {
             className="input_content"
           />
           <img
-            src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/jf2awte7_expires_30_days.png"
+            src={Chat}
             className="image3_content"
             alt="Icon 1"
             onClick={() => alert("Pressed!")}
           />
           <img
-            src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/qorxs7lm_expires_30_days.png"
+            src={Send}
             className="image4_content"
             alt="Icon 2"
             onClick={() => alert("Pressed!")}
@@ -229,7 +236,7 @@ export default function MainContent() {
       <div className="row-view3_content">
         <button className="column3_content">
           <img
-            src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/3ppmif4e_expires_30_days.png"
+            src={Weather}
             className="image5_content"
             alt="Weather"
           />
@@ -237,7 +244,7 @@ export default function MainContent() {
         </button>
         <button className="button-column_content" onClick={() => alert("Pressed!")}>
           <img
-            src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/vck604ua_expires_30_days.png"
+            src={Email}
             className="image6_content"
             alt="Send Email"
           />
@@ -245,7 +252,7 @@ export default function MainContent() {
         </button>
         <button className="button-column2_content" onClick={() => alert("Pressed!")}>
           <img
-            src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/4y8rwsnc_expires_30_days.png"
+            src={Desc}
             className="image7_content"
             alt="Describe Img"
           />

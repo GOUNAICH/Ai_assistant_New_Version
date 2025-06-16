@@ -177,11 +177,13 @@ class AIAssistant:
                 
                 
             elif "generate image for" in command:
+                self.speech_handler.speak("Please wait a few seconds until your image is generated.")
                 filename = generate_img(command)
                 if filename:
-                    self.speech_handler.speak(f"Image generated and saved as {filename}.")
+                    self.speech_handler.speak("Image generated and saved in your Documents folder.")
                 else:
                     self.speech_handler.speak("Sorry, I couldn't generate the image.")
+
                     
             elif "send email" in command:
                 await self.send_email_handler.handle_send_email()

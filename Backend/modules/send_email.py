@@ -20,11 +20,11 @@ class SendEmail:
     def open_gmail(self):
         webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
         self.speech_handler.speak("Opening Gmail. Please wait...")
-        time.sleep(3)  # Increased wait time for page load
+        time.sleep(1.5)  # Reduced from 3 to 1.5 seconds
 
     def click_new_message(self):
         self.speech_handler.speak("Clicking on 'New Message'.")
-        time.sleep(1)  # Wait for Gmail to load
+        time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
 
         try:
             img_path = self.get_image_path("../img/image.png")
@@ -32,14 +32,14 @@ class SendEmail:
                 self.speech_handler.speak("Error: 'New Message' button image not found.")
                 return False
             
-            for attempt in range(5):
+            for attempt in range(3):  # Reduced from 5 to 3 attempts
                 button_location = pyautogui.locateCenterOnScreen(img_path, confidence=0.7)
                 if button_location:
-                    pyautogui.moveTo(button_location, duration=0.3)
+                    pyautogui.moveTo(button_location, duration=0.1)  # Reduced from 0.3 to 0.1
                     pyautogui.click()
                     self.speech_handler.speak("New message window opened.")
                     return True
-                time.sleep(1)
+                time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
             
             self.speech_handler.speak("Could not find 'New Message'. Try clicking manually.")
             return False
@@ -51,7 +51,7 @@ class SendEmail:
     async def get_voice_input(self, prompt, retries=2):
         for attempt in range(retries):
             self.speech_handler.speak(prompt)
-            time.sleep(1)
+            time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
 
             try:
                 response = await self.speech_handler.listen_command()
@@ -64,27 +64,27 @@ class SendEmail:
         return ""
 
     def type_recipient_manual(self):
-        """Allow user to manually type recipient email with 6 second wait"""
-        self.speech_handler.speak("Please type the recipient email address. You have 6 seconds.")
-        time.sleep(6)  # Wait 6 seconds for user to type recipient
+        """Allow user to manually type recipient email with 3 second wait"""
+        self.speech_handler.speak("Please type the recipient email address. You have 3 seconds.")
+        time.sleep(3)  # Reduced from 6 to 3 seconds
         pyautogui.press("tab")  # Move to next field (subject)
         self.speech_handler.speak("Recipient email entered. Moving to subject.")
-        time.sleep(1)
+        time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
 
     async def type_subject(self):
         subject = await self.get_voice_input("What is the subject of your email?") 
         if subject:
-            pyautogui.write(subject, interval=0.05)
+            pyautogui.write(subject, interval=0.02)  # Reduced from 0.05 to 0.02
             pyautogui.press("tab")
             self.speech_handler.speak(f"Subject set to {subject}.")
-            time.sleep(1)
+            time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
 
     async def type_message(self):
         message = await self.get_voice_input("What is the message?") 
         if message:
-            pyautogui.write(message, interval=0.05)
+            pyautogui.write(message, interval=0.02)  # Reduced from 0.05 to 0.02
             self.speech_handler.speak("Message written")
-            time.sleep(1)
+            time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
         
     async def handle_attachments(self):
         """Handles file attachment process"""
@@ -97,28 +97,28 @@ class SendEmail:
                 return
 
             found = False
-            for attempt in range(5):
+            for attempt in range(3):  # Reduced from 5 to 3 attempts
                 print(f"Debug: Attempt {attempt + 1} to locate attachment button...")
                 attach_btn = pyautogui.locateCenterOnScreen(img_path, confidence=0.65)
                 if attach_btn:
-                    pyautogui.moveTo(attach_btn, duration=0.3)
+                    pyautogui.moveTo(attach_btn, duration=0.1)  # Reduced from 0.3 to 0.1
                     pyautogui.click()
-                    self.speech_handler.speak("Please select your file. I'll wait 15 seconds.")
-                    time.sleep(15)
+                    self.speech_handler.speak("Please select your file. I'll wait 8 seconds.")
+                    time.sleep(8)  # Reduced from 15 to 8 seconds
                     self.speech_handler.speak("File attached successfully.")
                     found = True
                     break
                 else:
                     print("Debug: Attachment button not found this attempt.")
-                time.sleep(1)
+                time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
 
             if not found:
                 # Fallback to keyboard shortcut Shift + A
                 self.speech_handler.speak("Could not find the attach button. Using keyboard shortcut to open attachment dialog.")
                 pyautogui.hotkey("shift", "a")
-                time.sleep(2)
-                self.speech_handler.speak("Please select your file. I'll wait 15 seconds.")
-                time.sleep(15)
+                time.sleep(1)  # Reduced from 2 to 1 second
+                self.speech_handler.speak("Please select your file. I'll wait 8 seconds.")
+                time.sleep(8)  # Reduced from 15 to 8 seconds
                 self.speech_handler.speak("File attached successfully via shortcut.")
 
         except Exception as e:
@@ -128,7 +128,7 @@ class SendEmail:
     async def ask_attachments(self):
         response = await self.get_voice_input("Do you want to attach any files or images? Say yes or no.")
         
-        if response in ["yes", "yeah", "sure", "okay", "alright"]:
+        if response in ["yes", "yeah", "sure", "okay", "all right"]:
             await self.handle_attachments()
         elif response in ["no", "nah", "skip"]:
             self.speech_handler.speak("Skipping attachments.")
@@ -138,9 +138,9 @@ class SendEmail:
   
     async def send_email(self):
         confirmation = await self.get_voice_input("Say 'yes' to send the email or 'no' to cancel.")
-        if "yes" in confirmation.lower():
+        if "yes" or "send it" or "ok" in confirmation.lower():
             pyautogui.hotkey("ctrl", "enter")
-            time.sleep(1)
+            time.sleep(0.5)  # Reduced from 1 to 0.5 seconds
             self.speech_handler.speak("Email sent successfully.")
         else:
             self.speech_handler.speak("Email cancelled.")
