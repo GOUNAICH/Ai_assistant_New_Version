@@ -2,6 +2,14 @@ import React from "react";
 import "../CSS/About.css"
 import Abdeslam from '../../assets/Group 9.png';
 import Abdelhamid from '../../assets/Group 10.png';
+import Profile from "../../assets/profile.png";
+import Email from "../../assets/email_about.png";
+import Phone from "../../assets/phone_about.png";
+import Github from "../../assets/github_about.png";
+import Linkedin from "../../assets/linkedin_about.png";
+import Facebook from "../../assets/facebook_about.png";
+
+
 export default function About() {
   return (
     <div className="column_About">
@@ -10,7 +18,7 @@ export default function About() {
           {"About Us"}
         </span>
         <img
-          src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/qx1glbop_expires_30_days.png"}
+          src={Profile}
           className="image_About"
         />
       </div>
@@ -28,7 +36,7 @@ export default function About() {
                 </span>
                 <div className="row-view4_About">
                   <img
-                    src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/l4t75sbh_expires_30_days.png"}
+                    src={Email}
                     className="image3_About"
                   />
                   <span className="text3_About" >
@@ -37,7 +45,7 @@ export default function About() {
                 </div>
                 <div className="row-view5_About">
                   <img
-                    src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/ht646f0k_expires_30_days.png"}
+                    src={Phone}
                     className="image4_About"
                   />
                   <span className="text4_About" >
@@ -50,7 +58,7 @@ export default function About() {
             <div className="row-view6_About">
               <a href="https://www.facebook.com/abdeslam.gounaich/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/srve8thp_expires_30_days.png"
+                  src={Facebook}
                   className="image5_About"
                   alt="Image 1"
                 />
@@ -58,7 +66,7 @@ export default function About() {
 
               <a href="https://www.linkedin.com/in/abdeslam-gounaich-757998279/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/knponizd_expires_30_days.png"
+                  src={Linkedin}
                   className="image5_About"
                   alt="Image 2"
                 />
@@ -66,7 +74,7 @@ export default function About() {
 
               <a href="https://github.com/GOUNAICH/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/s5j18o14_expires_30_days.png"
+                  src={Github}
                   className="image6_About"
                   alt="Image 3"
                 />
@@ -88,7 +96,7 @@ export default function About() {
                 </span>
                 <div className="row-view4_About">
                   <img
-                    src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/as1ri81h_expires_30_days.png"}
+                    src={Email}
                     className="image3_About"
                   />
                   <span className="text3_About" >
@@ -97,7 +105,7 @@ export default function About() {
                 </div>
                 <div className="row-view5_About">
                   <img
-                    src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/9tv17d53_expires_30_days.png"}
+                    src={Phone}
                     className="image4_About"
                   />
                   <span className="text4_About" >
@@ -110,7 +118,7 @@ export default function About() {
             <div className="row-view6_About">
               <a href="https://www.facebook.com/profile.php?id=100011211101727" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/mcpbdv9d_expires_30_days.png"
+                  src={Facebook}
                   className="image5_About"
                   alt="Image 4"
                 />
@@ -118,7 +126,7 @@ export default function About() {
 
               <a href="https://www.linkedin.com/in/abdelhamid-ben-drif-10883928b/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/lw3wma86_expires_30_days.png"
+                  src={Linkedin}
                   className="image5_About"
                   alt="Image 5"
                 />
@@ -126,7 +134,7 @@ export default function About() {
 
               <a href="https://github.com/abdelhamidbendrif" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/xipeui5f_expires_30_days.png"
+                  src={Github}
                   className="image6_About"
                   alt="Image 6"
                 />

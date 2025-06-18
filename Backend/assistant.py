@@ -22,7 +22,7 @@ load_dotenv()
 
 class AIAssistant:
 
-    #flag = recoganize.AuthenticateFace()
+    flag = recoganize.AuthenticateFace()
     
     def __init__(self, window):
         self.window = window
