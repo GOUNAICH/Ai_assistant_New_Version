@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import vedio from '../../assets/assistant_vedio.mp4';
+import Profile from "../../assets/profile.png";
 
 import "../CSS/Help.css"
 export default function Helpt() {
@@ -8,7 +9,7 @@ export default function Helpt() {
     <div className="column_content_Help ">
       <div className="profile_container_Help ">
         <img
-          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/tlstigkr_expires_30_days.png"
+          src={Profile}
           className="profile_image_Help "
         />
       </div>

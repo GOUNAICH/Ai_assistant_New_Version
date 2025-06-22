@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Settings.css"
+import Profile from "../../assets/profile.png";
 
 export default function Settings() {
   // State for each toggle setting
@@ -11,7 +12,7 @@ export default function Settings() {
     <div className="column_content_Settings">
       <div className="profile_container_Settings">
         <img
-          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/tlstigkr_expires_30_days.png"
+          src={Profile}
           className="profile_image_Settings"
         />
       </div>
