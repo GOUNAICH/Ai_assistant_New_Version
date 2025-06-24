@@ -1,6 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../CSS/sidebar1.css";
+import Switch from "../../assets/switch.png";
+import Home from "../../assets/home.png";
+import About from "../../assets/about.png";
+import Help from "../../assets/help.png";
+import Settings from "../../assets/settings.png";
+import Logout from "../../assets/logout.png";
 
 export default function Sidebar1() {
     const location = useLocation();
@@ -11,7 +17,7 @@ export default function Sidebar1() {
             <Link to={location.pathname === '/' ? '/compact' : `/compact${location.pathname}`}>
                 <div className="view_Sidebar1">
                     <img
-                        src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/kjsbh6ag_expires_30_days.png"
+                        src={Switch}
                         className="image_Sidebar1"
                         alt="Switch to compact view"
                     />
@@ -23,7 +29,7 @@ export default function Sidebar1() {
                 className={`row-view_Sidebar1 ${location.pathname === '/' ? 'active' : ''}`}
             >
                 <img
-                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/i1mbnej5_expires_30_days.png"
+                    src={Home}
                     className="image2_Sidebar1"
                     alt="Home"
                 />
@@ -35,7 +41,7 @@ export default function Sidebar1() {
                 className={`row-view2_Sidebar1 ${location.pathname === '/about' ? 'active' : ''}`}
             >
                 <img
-                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/n04crih1_expires_30_days.png"
+                    src={About}
                     className="image3_Sidebar1"
                     alt="About"
                 />
@@ -47,7 +53,7 @@ export default function Sidebar1() {
                 className={`row-view_Sidebar1 ${location.pathname === '/help' ? 'active' : ''}`}
             >
                 <img
-                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/kdfjitjs_expires_30_days.png"
+                    src={Help}
                     className="image4_Sidebar1"
                     alt="Help"
                 />
@@ -59,7 +65,7 @@ export default function Sidebar1() {
                 className={`row-view3_Sidebar1 ${location.pathname === '/settings' ? 'active' : ''}`}
             >
                 <img
-                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/e81dco88_expires_30_days.png"
+                    src={Settings}
                     className="image4_Sidebar1"
                     alt="Settings"
                 />
@@ -68,7 +74,7 @@ export default function Sidebar1() {
 
             <div className="row-view4_Sidebar1" onClick={() => {/* Add logout logic here */}}>
                 <img
-                    src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/3d7314jf_expires_30_days.png"
+                    src={Logout}
                     className="image4_Sidebar1"
                     alt="Logout"
                 />

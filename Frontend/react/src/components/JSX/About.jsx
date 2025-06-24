@@ -8,6 +8,17 @@ import Phone from "../../assets/phone_about.png";
 import Github from "../../assets/github_about.png";
 import Linkedin from "../../assets/linkedin_about.png";
 import Facebook from "../../assets/facebook_about.png";
+import ab1 from "../../assets/aboutus_assets/ab1.png";
+import ab2 from "../../assets/aboutus_assets/ab2.png";
+import ab3 from "../../assets/aboutus_assets/ab3.png";
+import ab4 from "../../assets/aboutus_assets/ab4.png";
+import ab5 from "../../assets/aboutus_assets/ab5.png";
+import ab6 from "../../assets/aboutus_assets/ab6.png";
+import ab7 from "../../assets/aboutus_assets/ab7.png";
+import ab8 from "../../assets/aboutus_assets/ab8.png";
+import ab9 from "../../assets/aboutus_assets/ab9.png";
+import ab10 from "../../assets/aboutus_assets/ab10.png";
+
 
 
 export default function About() {
@@ -155,7 +166,7 @@ export default function About() {
             <div className="column2_Features">
               <div className="row-view2_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/4jede57l_expires_30_days.png"}
+                  src={ab1}
                   className="image_Features"
                 />
                 <span className="text2_Features" >
@@ -164,7 +175,7 @@ export default function About() {
               </div>
               <div className="row-view3_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/fb8akyvx_expires_30_days.png"}
+                  src={ab2}
                   className="image2_Features"
                 />
                 <span className="text3_Features" >
@@ -173,7 +184,7 @@ export default function About() {
               </div>
               <div className="row-view4_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/k8d32p94_expires_30_days.png"}
+                  src={ab3}
                   className="image3_Features"
                 />
                 <span className="text4_Features" >
@@ -184,7 +195,7 @@ export default function About() {
               {/* This is a comment inside JSX */}
               <div className="row-view12_Featurs">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/wthviyvc_expires_30_days.png"}
+                  src={ab4}
                   className="image12_Featurs"
                 />
                 <span className="text12_Featurs" >
@@ -193,7 +204,7 @@ export default function About() {
               </div>
               <div className="row-view312_Featurs">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/s500qsmp_expires_30_days.png"}
+                  src={ab5}
                   className="image212_Featurs"
                 />
                 <span className="text312_Featurs" >
@@ -210,7 +221,7 @@ export default function About() {
             <div className="column3_Features">
               <div className="row-view5_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/d49jyo6l_expires_30_days.png"}
+                  src={ab6}
                   className="image4_Features"
                 />
                 <span className="text5_Features" >
@@ -219,7 +230,7 @@ export default function About() {
               </div>
               <div className="row-view6_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/cuvi6b66_expires_30_days.png"}
+                  src={ab7}
                   className="image5_Features"
                 />
                 <span className="text6_Features" >
@@ -228,7 +239,7 @@ export default function About() {
               </div>
               <div className="row-view7_Features">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/vvpe0mli_expires_30_days.png"}
+                  src={ab8}
                   className="image6_Features"
                 />
                 <span className="text7_Features" >
@@ -238,7 +249,7 @@ export default function About() {
               {/* This is a comment inside JSX */}
               <div className="row-view412_Featurs">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/gwxca58u_expires_30_days.png"}
+                  src={ab9}
                   className="image312_Featurs"
                 />
                 <span className="text412_Featurs" >
@@ -247,7 +258,7 @@ export default function About() {
               </div>
               <div className="row-view512_Featurs">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/0l7egblm_expires_30_days.png"}
+                  src={ab10}
                   className="image412_Featurs"
                 />
                 <span className="text512_Featurs" >

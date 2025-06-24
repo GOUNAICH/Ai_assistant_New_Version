@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import vedio from '../../assets/assistant_vedio.mp4';
 import Profile from "../../assets/profile.png";
+import img1 from "../../assets/1.png";
+import img2 from "../../assets/2.png";
+import img4 from "../../assets/3.png";
+import img3 from "../../assets/4.png";
+import img5 from "../../assets/5.png";
 
 import "../CSS/Help.css"
 export default function Helpt() {
@@ -24,7 +29,7 @@ export default function Helpt() {
             <div className="column2_Help">
               <div className="row-view2_Help">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/aleqjd4w_expires_30_days.png"}
+                  src={img1}
                   className="image_Help"
                 />
                 <span className="text2_Help" >
@@ -33,7 +38,7 @@ export default function Helpt() {
               </div>
               <div className="row-view3_Help">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/cqzcfwdm_expires_30_days.png"}
+                  src={img2}
                   className="image2_Help"
                 />
                 <span className="text3_Help" >
@@ -42,7 +47,7 @@ export default function Helpt() {
               </div>
               <div className="row-view4_Help">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/n0qhif7k_expires_30_days.png"}
+                  src={img3}
                   className="image3_Help"
                 />
                 <span className="text4_Help" >
@@ -51,7 +56,7 @@ export default function Helpt() {
               </div>
               <div className="row-view5_Help">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/5v71qchs_expires_30_days.png"}
+                  src={img4}
                   className="image4_Help"
                 />
                 <span className="text5_Help" >
@@ -60,7 +65,7 @@ export default function Helpt() {
               </div>
               <div className="row-view6_Help">
                 <img
-                  src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/n0wqrxco_expires_30_days.png"}
+                  src={img5}
                   className="image5_Help"
                 />
                 <span className="text6_Help" >

@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import "../CSS/Settings.css"
 import Profile from "../../assets/profile.png";
+import imgs1 from "../../assets/s1.png";
+import imgs2 from "../../assets/s2.png";
+import imgs3 from "../../assets/s3.png";
+import imgs4 from "../../assets/s4.png";
+import imgs5 from "../../assets/s5.png";
+import Ellipse from "../../assets/Ellipse.png";
 
 export default function Settings() {
   // State for each toggle setting
@@ -24,7 +30,7 @@ export default function Settings() {
         <div className="view_Settings">
           <div className="row-view_Settings">
             <img
-              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/snqinjig_expires_30_days.png"}
+              src={imgs1}
               className="image_Settings"
             />
             <span className="input_Settings">Dark Mode</span>
@@ -34,7 +40,7 @@ export default function Settings() {
               style={{ cursor: 'pointer' }}
             >
               <img
-                src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/wme8p2d1_expires_30_days.png"}
+                src={Ellipse}
                 className="image2_Settings"
               />
             </div>
@@ -45,7 +51,7 @@ export default function Settings() {
         <div className="view_Settings">
           <div className="row-view2_Settings">
             <img
-              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/k54a3q8a_expires_30_days.png"}
+              src={imgs2}
               className="image3_Settings"
             />
             <span className="input_Settings">Voice Input</span>
@@ -55,7 +61,7 @@ export default function Settings() {
               style={{ cursor: 'pointer' }}
             >
               <img
-                src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/av80lgor_expires_30_days.png"}
+                src={Ellipse}
                 className="image2_Settings"
               />
             </div>
@@ -66,7 +72,7 @@ export default function Settings() {
         <div className="view4_Settings">
           <div className="row-view3_Settings">
             <img
-              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/a6l7mnro_expires_30_days.png"}
+              src={imgs3}
               className="image4_Settings"
             />
             <span className="input2_Settings">Notifications</span>
@@ -76,7 +82,7 @@ export default function Settings() {
               style={{ cursor: 'pointer' }}
             >
               <img
-                src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/ztcs4ilq_expires_30_days.png"}
+                src={Ellipse}
                 className="image2_Settings"
               />
             </div>
@@ -87,7 +93,7 @@ export default function Settings() {
         <div className="view6_Settings">
           <div className="row-view4_Settings">
             <img
-              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/m3x7hs4r_expires_30_days.png"}
+              src={imgs4}
               className="image_Settings"
             />
             <span className="text2_Settings">Language</span>
@@ -107,7 +113,7 @@ export default function Settings() {
         >
           <div className="row-view_Reset_Settings">
             <img
-              src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/8CpHCMTlg6/nbo1nyq6_expires_30_days.png"}
+              src={imgs5}
               className="image_Reset_Settings"
             />
             <div className="box_Reset_Settings"></div>
